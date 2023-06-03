@@ -47,7 +47,6 @@ main{
 }
 
 .main-container{
-    background-color: #FFFFFF;
     height: 350px;
     width: 100%;
     margin: 40px 30px;
@@ -58,11 +57,14 @@ main{
 .promo{
     height: 100%;
     display: flex;
+    border-radius: 6px;
+    margin-right: 3px;
 }
 
 .promo img{
     width: 100%;
     height: auto;
+    border-radius: 6px;
 }
 
 .msj-promo{
@@ -77,6 +79,12 @@ main{
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
+}
+
+.top-five-section{
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    margin-left: 3px;
 }
 
 .promo, .top-five-section{
