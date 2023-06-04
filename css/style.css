@@ -36,7 +36,6 @@ footer{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 main{
@@ -48,10 +47,9 @@ main{
 
 .main-container{
     height: auto;
-    width: 100%;
+    flex-grow: 1;
     margin: 30px 20px;
     display: flex;
-    justify-content: space-between;
 }
 
 .promo{
@@ -59,6 +57,7 @@ main{
     display: flex;
     border-radius: 6px;
     margin-right: 3px;
+    background-color: #2fa7d6;
 }
 
 .promo img{
@@ -68,10 +67,13 @@ main{
 }
 
 .msj-promo{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6px;
+    width: 30%;
     margin-left: 80px;
     margin-top: 28px;
     position: absolute;
-    justify-self:center;
 }
 
 .top-five-container{
@@ -102,14 +104,6 @@ h2.red-text{
     line-height: 19px;
     text-align: left;
     padding: 5px;
-}
-
-.PizzaFalling-container{
-    margin-top: 20px;
-}
-
-.menu-top-five ol{
- margin-top: 20px;
 }
 
 .logo{
@@ -165,4 +159,41 @@ footer .main-nav ul{
 
 footer .main-nav li{
     padding: 0;
+}
+
+@media all and (max-width: 980px) {
+    .main-container{
+        flex-wrap: wrap;
+        flex-grow: 0.5;
+        margin: 8px 0;
+    }
+
+    .promo, .top-five-section{
+        margin: 9px 0;
+        flex-basis: 100%;
+    }
+
+    .top-five-section{
+        padding-bottom: 30px;
+    }
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+    .main-container{
+        flex-grow: 1;
+        background-color: #3a2cb3;
+    }
+} 
+  
+  /* Small screens */
+@media all and (max-width: 500px) {
+    .main-container { 
+        background-color: #b2ca29;
+        margin: 0;
+    }
+    .promo, .top-five-section{
+        margin: 9px 0;
+        flex-basis: 100%;
+    }
 }
