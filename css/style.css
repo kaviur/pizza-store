@@ -182,14 +182,12 @@ footer .main-nav li{
 @media all and (max-width: 800px) {
     .main-container{
         flex-grow: 1;
-        background-color: #3a2cb3;
     }
 } 
   
   /* Small screens */
 @media all and (max-width: 500px) {
     .main-container { 
-        background-color: #b2ca29;
         margin: 0;
     }
     .promo, .top-five-section{
